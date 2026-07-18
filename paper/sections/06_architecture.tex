@@ -1,0 +1,10 @@
+\subsection{Pipeline Overview}
+The proposed pipeline translates natural-language scenarios into proof-carrying recommendations. The architecture consists of three main components:
+\begin{enumerate}
+    \item \textbf{LLM Front-End:} Extracts zones, edges, hazards, capabilities, and necessary assumptions from natural language.
+    \item \textbf{Deterministic Translator:} Converts the structured JSON output from the LLM into Lean 4 definitions and theorems.
+    \item \textbf{Lean 4 Back-End:} Compiles the generated code and verifies the proof obligations.
+\end{enumerate}
+
+\subsection{The Trust Boundary}
+Crucially, the LLM is completely untrusted. If the LLM hallucinates an incorrect model, Lean will either fail to compile the proof or verify a model that the human user can visibly reject during the assumption confirmation phase. This proof-carrying architecture \cite{necula1997proof} ensures that safety claims are backed by rigorous mathematics, not statistical language generation.

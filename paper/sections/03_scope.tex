@@ -1,0 +1,15 @@
+\subsection{Scope Definition}
+This paper addresses the verification of physical access constraints in domestic environments for children under 5 years old. We focus on spatial reachability rather than chemical, biological, or complex temporal hazards.
+
+\subsection{Terminology}
+\begin{itemize}
+    \item \textbf{Zone:} A distinguishable spatial location.
+    \item \textbf{Hazard:} A zone containing an unacceptable risk.
+    \item \textbf{Intervention:} A physical modification to the environment (e.g., installing a gate).
+\end{itemize}
+
+\subsection{Threat Model and Formal Boundary}
+The formal boundary lies at the model definition. If the assumptions hold, the formal guarantee holds. We explicitly assume the physical barrier operates according to its specification (e.g., it does not spontaneously break).
+
+\subsection{Modelling Caregiver and Child Capability}
+Child capabilities are modeled as a finite set of boolean flags (e.g., \texttt{crawling}, \texttt{operateLatch}). Caregiver modes represent the level of supervision (e.g., \texttt{Attentive}, \texttt{Distracted}).

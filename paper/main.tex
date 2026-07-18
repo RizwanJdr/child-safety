@@ -1,0 +1,118 @@
+\documentclass[11pt,a4paper]{article}
+
+\usepackage{geometry}
+\geometry{margin=1in}
+\usepackage{microtype}
+\usepackage{amsmath,amssymb,amsfonts,mathtools,amsthm}
+\usepackage{booktabs,tabularx,longtable,multirow}
+\usepackage{xcolor}
+\usepackage{graphicx}
+\usepackage{tikz}
+\usepackage{pgfplots}
+\pgfplotsset{compat=1.18}
+\usepackage{listings}
+\usepackage{enumitem}
+\usepackage{csquotes}
+\usepackage{hyperref}
+\usepackage{cleveref}
+\usepackage{url}
+\usepackage{xspace}
+
+\definecolor{keywordcolor}{RGB}{0,0,255}
+\definecolor{stringcolor}{RGB}{163,21,21}
+\definecolor{commentcolor}{RGB}{0,128,0}
+
+\lstdefinelanguage{Lean}{
+    keywords={def, theorem, lemma, structure, inductive, open, import, Prop, Bool, Set, True, False, ∀, ∃, ∧, ∨, →, ↔, ¬, by, intro, apply, exact, rcases, split, have, dsimp, rw, cases, rfl, revert, induction, with, if, then, else, deriving, fun, class, instance, match, let, mut, do},
+    keywordstyle=\color{keywordcolor}\bfseries,
+    stringstyle=\color{stringcolor},
+    commentstyle=\color{commentcolor},
+    morecomment=[l]{--},
+    morecomment=[s]{/-}{-/},
+    morestring=[b]",
+    sensitive=true,
+    keepspaces=true,
+    showstringspaces=false,
+    basicstyle=\ttfamily\small,
+    breaklines=true,
+    literate={∀}{{$\forall$}}1 {∃}{{$\exists$}}1 {∧}{{$\wedge$}}1 {∨}{{$\vee$}}1 {→}{{$\rightarrow$}}1 {↔}{{$\leftrightarrow$}}1 {¬}{{$\neg$}}1 {∈}{{$\in$}}1 {∉}{{$\notin$}}1 {⊆}{{$\subseteq$}}1 {×}{{$\times$}}1 {ℝ}{{$\mathbb{R}$}}1 {₁}{{$_1$}}1 {₂}{{$_2$}}1 {₀}{{$_0$}}1 {Σ}{{$\Sigma$}}1 {Γ}{{$\Gamma$}}1 {γ}{{$\gamma$}}1 {η}{{$\eta$}}1
+}
+
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{definition}{Definition}[section]
+\newtheorem{assumption}{Assumption}[section]
+\newtheorem{example}{Example}[section]
+\newtheorem{remark}{Remark}[section]
+\newtheorem{limitation}{Limitation}[section]
+
+\newcommand{\leanref}[1]{\href{https://github.com/placeholder/proof-carrying-child-safety}{\texttt{#1}}}
+
+\title{From ``Keep Watching'' to ``Cannot Reach'': \\ Proof-Carrying Everyday Child Safety with LLM-Mediated Lean 4 Verification}
+\author{Manus AI \\ \textit{Manus Research} \\ \texttt{research@manus.im}}
+\date{\today}
+
+\begin{document}
+
+\maketitle
+
+\begin{abstract}
+\input{sections/00_abstract.tex}
+\end{abstract}
+
+\textbf{Keywords:} formal verification, human-centred formal methods, safety engineering, Lean 4, large language models.
+
+\section{Introduction}
+\input{sections/01_introduction.tex}
+
+\section{Background and Related Work}
+\input{sections/02_background.tex}
+
+\section{Scope, Terminology, Threat Model, and System Boundary}
+\input{sections/03_scope.tex}
+
+\section{Formal Model}
+\input{sections/04_formal_model.tex}
+
+\section{Formal Results and Lean 4 Mechanisation}
+\input{sections/05_lean.tex}
+
+\section{System Architecture}
+\input{sections/06_architecture.tex}
+
+\section{Running Case Study: The Two-Storey House}
+\input{sections/07_staircase.tex}
+
+\section{Additional Formal Case Studies}
+\input{sections/08_case_studies.tex}
+
+\section{Benchmark Construction}
+\input{sections/09_benchmark.tex}
+
+\section{Experimental Design}
+\input{sections/10_experiments.tex}
+
+\section{Results}
+\input{sections/11_results.tex}
+
+\section{Discussion}
+\input{sections/12_discussion.tex}
+
+\section{Threats to Validity}
+\input{sections/13_validity.tex}
+
+\section{Ethics, Safety, and Responsible Release}
+\input{sections/14_ethics.tex}
+
+\section{Limitations}
+\input{sections/15_limitations.tex}
+
+\section{Conclusion}
+\input{sections/16_conclusion.tex}
+
+\bibliographystyle{plain}
+\bibliography{bibliography}
+
+\end{document}

@@ -1,0 +1,11 @@
+Article_Theorem,Lean_Theorem,Lean_Module,Assumptions,Build_Status,Independent_Check,Notes
+"Lemma 1","reachability_concatenation","ChildSafety.Reachability","None",Passed,Yes,"Basic relation property"
+"Lemma 2","restricted_transition_inclusion","ChildSafety.Reachability","Subset of transitions",Passed,Yes,"Basic relation property"
+"Theorem 1","reachability_invariant_equivalence","ChildSafety.Safety","None",Passed,Yes,"Core safety equivalence"
+"Theorem 2","barrier_monotonicity","ChildSafety.Barrier","Interventions only remove edges",Passed,Yes,"Monotonicity of safety"
+"Theorem 3","cut_set_sufficiency","ChildSafety.Cut","C is a cut set",Passed,Yes,"Cut set property"
+"Corollary 1","stair_gate_safety","ChildSafety.Examples.Staircase","StairAssumptions",Passed,Yes,"Running example theorem"
+"Theorem 6","verified_intervention_optimality","ChildSafety.Synthesis","Finite candidate space",Passed,Yes,"Conceptual formalisation"
+"Theorem 7","k_failure_robustness_characterisation","ChildSafety.Robust","Edge-removal barriers",Passed,Yes,"Conceptual formalisation"
+"Theorem 8","conservative_abstraction_safety_transfer","ChildSafety.Refinement","Simulation relation",Passed,Yes,"Simulation preservation"
+"Theorem 11","certificate_soundness","ChildSafety.Certificate","None",Passed,Yes,"Proof carrying property"

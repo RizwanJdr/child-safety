@@ -1,0 +1,60 @@
+\begin{thebibliography}{10}
+
+\bibitem{ali2019consumer}
+B~Ali et~al.
+\newblock Consumer products contributing to fall injuries in children aged< 1
+  to 19 years treated in us emergency departments, 2010 to 2013: an
+  observational study.
+\newblock {\em Global pediatric health}, 6, 2019.
+
+\bibitem{baier2008principles}
+Christel Baier and Joost-Pieter Katoen.
+\newblock {\em Principles of Model Checking}.
+\newblock MIT press, 2008.
+
+\bibitem{lee2004trust}
+John~D Lee and Katrina~A See.
+\newblock Trust in automation: Designing for appropriate reliance.
+\newblock {\em Human factors}, 46(1):50--80, 2004.
+
+\bibitem{leveson2011engineering}
+Nancy Leveson.
+\newblock {\em Engineering a safer world: Systems thinking applied to safety}.
+\newblock MIT press, 2011.
+
+\bibitem{moura2021lean}
+Leonardo~de Moura and Sebastian Ullrich.
+\newblock The lean 4 theorem prover and programming language.
+\newblock In {\em Automated Deduction--CADE 28: 28th International Conference
+  on Automated Deduction, Virtual Event, July 12--15, 2021, Proceedings 28},
+  pages 425--436. Springer, 2021.
+
+\bibitem{necula1997proof}
+George~C Necula.
+\newblock Proof-carrying code.
+\newblock In {\em Proceedings of the 24th ACM SIGPLAN-SIGACT symposium on
+  Principles of programming languages}, pages 106--119, 1997.
+
+\bibitem{parasuraman1997humans}
+Raja Parasuraman and Victor Riley.
+\newblock Humans and automation: Use, misuse, disuse, abuse.
+\newblock {\em Human factors}, 39(2):230--253, 1997.
+
+\bibitem{who2008world}
+Margie Peden, Kayode Oyegbite, Joan Ozanne-Smith, Adnan~A Hyder, Christine
+  Branche, AKM~Fazlur Rahman, Frederick Rivara, and Kidist Bartolomeos.
+\newblock {\em World report on child injury prevention}.
+\newblock World Health Organization, 2008.
+
+\bibitem{reason1990human}
+James Reason.
+\newblock {\em Human error}.
+\newblock Cambridge university press, 1990.
+
+\bibitem{yang2023leandojo}
+Kaiyu Yang, Aidan Swope, Alex Gu, Rahul Chalamala, Peiyang Song, Shixing Yu,
+  Saad Godil, Ryan Prenger, and Anima Anandkumar.
+\newblock Leandojo: Theorem proving with retrieval-augmented language models.
+\newblock In {\em Advances in Neural Information Processing Systems}, 2023.
+
+\end{thebibliography}

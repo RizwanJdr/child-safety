@@ -1,0 +1,22 @@
+\subsection{Motivating Staircase Scenario}
+Consider a two-storey house where a steep staircase is accessible from the living room through a short hallway. An 18-month-old child, capable of crawling and pulling to stand, is playing in the living room. Caregivers may occasionally become distracted or step into the kitchen. Without a physical barrier, safety relies entirely on continuous attention.
+
+\subsection{Attention-Dependent versus Barrier-Backed Safety}
+Decades of human factors research \cite{parasuraman1997humans, reason1990human} demonstrate that continuous vigilance is an unreliable safety mechanism. Environmental modification (e.g., installing a stair gate) shifts the system from attention-dependent safety to barrier-backed safety \cite{leveson2011engineering}. However, barrier-backed safety introduces new failure modes: alternate routes, incorrect assumptions about child capabilities, or barrier failures.
+
+\subsection{Formal-Methods Accessibility Gap}
+Formal methods, such as model checking \cite{baier2008principles} and interactive theorem proving \cite{moura2021lean}, offer rigorous techniques for verifying safety properties. However, these tools require specialised expertise, making them inaccessible to ordinary caregivers and safety practitioners.
+
+\subsection{Core Insight and Trusted-Boundary Principle}
+Our core insight is that an untrusted Large Language Model (LLM) can bridge the semantic gap without compromising formal verification. The LLM proposes and explains; the caregiver confirms assumptions; the deterministic translator constructs the model; Lean verifies the formal claim. This maintains a clear trusted boundary \cite{necula1997proof}.
+
+\subsection{Research Questions}
+\begin{itemize}
+    \item \textbf{RQ1:} To what extent can common domestic child-safety scenarios be represented as finite guarded transition systems?
+    \item \textbf{RQ2:} How faithfully can an LLM translate natural-language descriptions into formal models?
+    \item \textbf{RQ3:} Does Lean-backed verification reduce false-safe conclusions?
+    \item \textbf{RQ4:} Can the framework produce sound and optimal interventions?
+\end{itemize}
+
+\subsection{Explicit Non-Claims}
+We do not claim that Lean proves a physical house is absolutely safe, nor that a real child cannot be injured. Lean verifies the formal model. The assumptions define the boundary of the guarantee.
