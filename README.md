@@ -8,12 +8,6 @@
 
 ```
 proof-carrying-child-safety/
-├── paper/
-│   ├── PAPER.md              # Main research paper (Markdown, arXiv-ready)
-│   ├── main.tex              # LaTeX source
-│   ├── main.pdf              # Compiled PDF
-│   ├── bibliography.bib      # BibTeX references
-│   └── sections/             # LaTeX section files
 ├── ChildSafetyLean/          # Lean 4 mechanisation project
 │   ├── ChildSafety/
 │   │   ├── Basic.lean        # Zones, capabilities, caregiver modes, barrier states
